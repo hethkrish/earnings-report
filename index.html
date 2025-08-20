@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Quarterly Earnings Report</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- RevealJS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.3/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.3/theme/black.min.css">
+
+    <!-- Highlight.js for code syntax -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/monokai.min.css">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <!-- Title Slide -->
+        <section>
+          <h1>Quarterly Earnings Report</h1>
+          <p><strong>Prepared by:</strong> Technical Consultant</p>
+          <p><strong>Email:</strong> 22f3001405@ds.study.iitm.ac.in</p>
+          <aside class="notes">
+            Introduce yourself, mention your role, and set the context for the stakeholders.
+          </aside>
+        </section>
+
+        <!-- Markdown Slide -->
+        <section data-markdown>
+          <textarea data-template>
+            ## Performance Highlights
+            - Revenue Growth: **15%**
+            - Net Profit: **$120M**
+            - Customer Acquisition: **+25%**
+          </textarea>
+          <aside class="notes">
+            Emphasize the strong revenue and customer acquisition numbers.
+          </aside>
+        </section>
+
+        <!-- Fragments Animation -->
+        <section>
+          <h2>Key Drivers</h2>
+          <ul>
+            <li class="fragment">Digital Transformation</li>
+            <li class="fragment">Cost Optimization</li>
+            <li class="fragment">Global Expansion</li>
+          </ul>
+          <aside class="notes">
+            Reveal each driver one by one to keep audience focused.
+          </aside>
+        </section>
+
+        <!-- Code Example with Highlighting -->
+        <section>
+          <h2>Data Pipeline Example</h2>
+          <pre><code class="language-python">
+import pandas as pd
+
+# Load quarterly data
+df = pd.read_csv("earnings.csv")
+
+# Compute profit margin
+df["margin"] = df["net_income"] / df["revenue"]
+print(df.head())
+          </code></pre>
+          <aside class="notes">
+            Demonstrate how our data science team processes earnings data.
+          </aside>
+        </section>
+
+        <!-- Math Formula -->
+        <section>
+          <h2>Financial Formula</h2>
+          <p>Return on Equity (ROE):</p>
+          <p>$$ ROE = \frac{Net\ Income}{Shareholder's\ Equity} $$</p>
+          <aside class="notes">
+            Explain why ROE is a key measure of financial performance.
+          </aside>
+        </section>
+
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.3/reveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.3/plugin/markdown/markdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.3/plugin/highlight/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.3/plugin/math/math.min.js"></script>
+
+    <script>
+      Reveal.initialize({
+        hash: true,
+        plugins: [ RevealMarkdown, RevealHighlight, RevealMath ]
+      });
+    </script>
+  </body>
+</html>
